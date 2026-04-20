@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SciRaft Technologies</title>
+
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+        <div class="comet-background">
+            <!-- Comet and stars container (now absolute, not fixed) -->
+            <div class="comet-stars" id="stars-container"></div>
+            <div class="comet-container" id="comet-container"></div>
+            
+    
+       
+    <!-- ========================= HERO ========================= -->
+    <section class="hero">
+        
+        <div class="hero-left">
+            <img src="logo.jpeg" class="logo" alt="SciRaft Logo">
+
+            <h1 class="brand">
+                SciRaft <br> Technologies
+            </h1>
+        </div>
+
+        <div class="hero-right">
+            <h2 class="tagline">
+                DARE TO BUILD THE <br> IMPOSSIBLE
+            </h2>
+
+            <a href="#about" class="get-started">
+                GET STARTED <span class="arrow">&#8595;</span>
+            </a>
+        </div>
+    </section>
+    </div>
+
+    <!-- ========================= ABOUT ========================= -->
+    <section id="about" class="about-section">
+        <div class="about-grid">
+            <div>
+                <h2>Revolutionizing Technology Development</h2>
+
+                <p>
+                    SciRaft Technologies is a forward-thinking engineering and technology firm
+                    dedicated to developing cutting-edge solutions that push the boundaries of innovation.
+                    Built on a commitment to quality, creativity, and technical excellence, we strive
+                    to redefine what is possible in product development and research.
+                </p>
+            </div>
+            <div class="about-image">
+             <img src="assets/07.png"
+                 alt="SciRaft Technologies Chip Illustration">
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ========================= WHAT WE OFFER ========================= -->
+    <section class="offer-section">
+        <h2 class="section-title">What we offer..</h2>
+
+        <div class="offer-grid">
+
+            <div class="offer-card">
+                <h3>Cutting-Edge Innovation</h3>
+                <p>
+                    Our innovative solutions ensure you stay ahead of the curve with
+                    the latest technology trends.
+                </p>
+            </div>
+
+            <div class="offer-card">
+                <h3>Unparalleled Support</h3>
+                <p>
+                    Experience top-tier guidance and assistance from our dedicated team,
+                    available around the clock.
+                </p>
+            </div>
+
+            <div class="offer-card">
+                <h3>Scalable Solutions</h3>
+                <p>
+                    We offer flexible solutions that adapt to your business needs,
+                    ensuring long-term success.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- ========================= KEY METRICS ========================= -->
+      <!--
+    <section class="metrics-section">
+        <div>
+        <h2 class="section-title">Key Metrics</h2>
+        </div>
+         <div class="metrics-box dashboard ">
+       
+        <div class="startup-card card-1" onclick="updateMetric(0)">
+            <div class="startup-wave">
+                <div class="wave-path"></div>
+                <div class="wave-path"></div>
+                <div class="wave-path"></div>
+            </div>
+            
+            <div class="startup-content">
+                <svg class="metric-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                </svg>
+                
+                <div class="value-section">
+                    <span class="metric-value" id="metric1">68%</span>
+                    <span class="metric-change positive" id="change1">+4.2%</span>
+                </div>
+                
+                <div class="info-section">
+                    <span class="metric-label">Feature<br>Adoption<br>Rate</span>
+                    <span class="metric-description" id="desc1">Users who adopted new features</span>
+                </div>
+            </div>
+            
+            <div class="live-indicator">
+                <div class="indicator-dot"></div>
+                <div class="indicator-dot"></div>
+                <div class="indicator-dot"></div>
+            </div>
+        </div>
+
+       
+       
+        <div class="startup-card card-2" onclick="updateMetric(1)">
+            <div class="startup-wave">
+                <div class="wave-path"></div>
+                <div class="wave-path"></div>
+                <div class="wave-path"></div>
+            </div>
+            
+            <div class="startup-content">
+                <svg class="metric-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/>
+                </svg>
+                
+                <div class="value-section">
+                    <span class="metric-value" id="metric2">18.3%</span>
+                    <span class="metric-change positive" id="change2">+2.1%</span>
+                </div>
+                
+                <div class="info-section">
+                    <span class="metric-label">Month-over-Month<br>Growth</span>
+                    <span class="metric-description" id="desc2">User growth compared to previous month</span>
+                </div>
+            </div>
+            
+            <div class="live-indicator">
+                <div class="indicator-dot"></div>
+                <div class="indicator-dot"></div>
+                <div class="indicator-dot"></div>
+            </div>
+        </div>
+
+        
+        <div class="startup-card card-3" onclick="updateMetric(2)">
+            <div class="startup-wave">
+                <div class="wave-path"></div>
+                <div class="wave-path"></div>
+                <div class="wave-path"></div>
+            </div>
+            
+            <div class="startup-content">
+                <svg class="metric-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+                </svg>
+                
+                <div class="value-section">
+                    <span class="metric-value" id="metric3">2.7%</span>
+                    <span class="metric-change negative" id="change3">+0.2%</span>
+                </div>
+                
+                <div class="info-section">
+                    <span class="metric-label">Monthly<br>Churn<br>Rate</span>
+                    <span class="metric-description" id="desc3">Percentage of users lost this month</span>
+                </div>
+            </div>
+            
+            <div class="live-indicator">
+                <div class="indicator-dot"></div>
+                <div class="indicator-dot"></div>
+                <div class="indicator-dot"></div>
+            </div>
+        </div>
+    </div>
+    </section>
+     -->
+    <section class="para-section">
+       <p>
+        At SciRaft Technologies, we specialize in transforming ideas into reality,
+        leveraging cutting-edge technology to drive success and innovation for our clients.
+       </p>
+    </section>
+    <!-- ========================= OUR PRODUCTS ========================= -->
+    <section class="products-section">
+        <h2 class="section-title">Our Products</h2>
+
+        <div class="product-grid">
+
+            <div class="product-card">
+                <img src="assets/product_01.jpeg" alt="Defense Equipment">
+                <h3>DEFENCE EQUIPMENT</h3>
+                <p>
+                 Our engineering team is actively developing a next-generation VTOL UAV,
+                 incorporating advanced flight-control architectures and novel stabilization
+                 algorithms...
+                </p>
+            </div>
+
+            <div class="product-card">
+                <img src="assets/product_02.jpeg" alt="Electronics">
+                <h3>ELECTRONICS</h3>
+                <p>
+                    Our research division is pioneering advancements in next-generation
+                    supercapacitor technology, aimed at delivering ultra-fast,
+                    high-efficiency energy storage solutions...
+                </p>
+            </div>
+
+            <div class="product-card">
+                <img src="assets/product_03.jpeg" alt="Clean Energy">
+                <h3>GREEN ENERGY</h3>
+                <p>
+                    Our solutions span the full spectrum of sustainable mobility
+                    and renewable energy generation,
+                    from triboelectric nanogenerators to advanced biofuels...
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+<!--
+    <div class="gallery-container">
+        <h2 class="section-title">Our gallery</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="assets/01.jpeg" alt="Image 1" class="gallery-img">
+            </div>
+            
+            <div class="gallery-item">
+                <img src="assets/02.jpeg" alt="Image 2" class="gallery-img">
+            </div>
+            
+            <div class="gallery-item">
+                <img src="assets/03.jpeg" alt="Image 3" class="gallery-img">
+            </div>
+            
+            <div class="gallery-item">
+                <img src="assets/04.jpeg" alt="Image 4" class="gallery-img">
+            </div>
+            
+            <div class="gallery-item">
+                <img src="assets/05.jpeg" alt="Image 5" class="gallery-img">
+            </div>
+
+            <div class="gallery-item">
+                <img src="assets/06.jpeg" alt="Image 3" class="gallery-img">
+            </div>
+            <div class="gallery-item">
+                <img src="assets/08.png" alt="Image 1" class="gallery-img">
+            </div>
+            
+            <div class="gallery-item">
+                <img src="assets/09.png" alt="Image 2" class="gallery-img">
+            </div>
+            
+            <div class="gallery-item">
+                <img src="assets/10.png" alt="Image 3" class="gallery-img">
+            </div>
+            
+            <div class="gallery-item">
+                <img src="assets/11.png" alt="Image 4" class="gallery-img">
+            </div>
+            
+            <div class="gallery-item">
+                <img src="assets/12.png" alt="Image 5" class="gallery-img">
+            </div>
+            <div class="gallery-item">
+                <img src="assets/13.png" alt="Image 5" class="gallery-img">
+            </div>
+        </div>
+    </div>
+ -->
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="close-btn" id="close-btn">&times;</span>
+        <span class="nav-btn prev-btn" id="prev-btn">&#10094;</span>
+        <span class="nav-btn next-btn" id="next-btn">&#10095;</span>
+        <img class="lightbox-img" id="lightbox-img" src="" alt="">
+    </div>
+    
+    <!-- ========================= CONTACT ========================= -->
+    <section class="contact-section">
+        <h2 class="section-title">Get in Touch!</h2>
+        <p class="contact-subtext">We’re here to answer your questions!</p>
+
+        <div class="contact-boxes">
+            <div class="contact-box">📞 +91 9876543210</div>
+            <div class="contact-box">📧 info@sciraft.com</div>
+            <div class="contact-box">📍 SciRaft HQ, India</div>
+        </div>
+    </section>
+
+    
+    <!-- ========================= FOOTER ========================= -->
+    <footer>
+        © 2025 SciRaft Technologies. All Rights Reserved.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
